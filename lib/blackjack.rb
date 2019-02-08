@@ -42,7 +42,6 @@ def hit?(card_total)
     invalid_command
     prompt_user
   end
-  display_card_total(card_total)
   card_total
 end
 
@@ -54,12 +53,5 @@ end
 # get every test to pass before coding runner below #
 #####################################################
 
-def runner
-  welcome
-  card_total = initial_round
-  until card_total > 21
-    card_total = hit?(card_total)
-  end
-end
 
 
